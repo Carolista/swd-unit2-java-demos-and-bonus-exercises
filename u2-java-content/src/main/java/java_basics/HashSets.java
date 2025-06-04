@@ -49,7 +49,7 @@ public class HashSets {
 
         // TODO: Convert the HashSet to an ArrayList
         //  then sort it with Collections.sort()
-        //  then convert it back to a HashSet and print it
+        //  then convert it back to a LinkedHashSet and print it
 
     }
 
