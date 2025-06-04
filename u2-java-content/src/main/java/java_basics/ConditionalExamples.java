@@ -1,6 +1,6 @@
 package java_basics;
 
-public class Conditionals {
+public class ConditionalExamples {
 
     public static void main(String[] args) {
 

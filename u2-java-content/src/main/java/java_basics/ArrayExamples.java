@@ -1,6 +1,6 @@
 package java_basics;
 
-public class Arrays {
+public class ArrayExamples {
 
     public static void main(String[] args) {
 
@@ -14,7 +14,7 @@ public class Arrays {
 
         // TODO: Print the array by name — what happens?
 
-        // TODO: Use Arrays.toString() to print the array's contents
+        // TODO: Use ArrayExamples.toString() to print the array's contents
 
 
         /* INITIALIZING AN ARRAY WITH VALUES */
@@ -24,7 +24,7 @@ public class Arrays {
 
         // TODO: Print a sentence with the number of men
 
-        // TODO: Print the array elements using Arrays.toString()
+        // TODO: Print the array elements using ArrayExamples.toString()
 
     }
 

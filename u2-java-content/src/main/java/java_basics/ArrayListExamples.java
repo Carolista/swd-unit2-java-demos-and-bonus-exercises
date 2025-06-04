@@ -1,12 +1,12 @@
 package java_basics;
 
-public class ArrayLists {
+public class ArrayListExamples {
 
     public static void main(String[] args) {
 
         /* DECLARING ARRAYLISTS */
 
-        // TODO: Declare two empty ArrayLists
+        // TODO: Declare two empty ArrayListExamples
         // elves, for data of type String
         // ages, for data of type Integer
 
@@ -35,7 +35,7 @@ public class ArrayLists {
 
 
         // And now the ages of the elves are not in the same order...
-        // We will fix this with HashMaps
+        // We will fix this with HashMapExamples
     }
 
 }

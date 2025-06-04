@@ -1,11 +1,6 @@
 package java_basics;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-
-public class HashSets {
+public class HashSetExamples {
 
     public static void main(String[] args) {
 

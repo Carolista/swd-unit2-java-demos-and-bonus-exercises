@@ -3,7 +3,7 @@ package java_basics;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Loops {
+public class LoopExamples {
 
     public static void main(String[] args) {
 

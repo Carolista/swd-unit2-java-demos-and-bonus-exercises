@@ -1,6 +1,6 @@
 package java_basics;
 
-public class HashMaps {
+public class HashMapExamples {
 
     public static void main(String[] args) {
 
