@@ -12,7 +12,7 @@ public class ConditionalExamples {
 
         // 8.146 is greater than or equal to 10
 
-        // "LaunchCode" is equal to "launchcode" if case-insensitive
+        // "Gandalf" is equal to "gandalf" if case-insensitive
 
         // 15 is greater than 10 AND is less than or equal to 20
 
@@ -31,7 +31,7 @@ public class ConditionalExamples {
 
         // Store the name in the map
 
-        // Declare (but do not initialize) a String, title
+        // Declare a String, title, and initialize to null
 
         // Construct a series of if/else-if/else blocks to initialize the title
         //   Eomer becomes King of Rohan
@@ -57,7 +57,7 @@ public class ConditionalExamples {
 
         // Store the name in the map
 
-        // Declare (but do not initialize) a String, realm
+        // Declare a String, realm, and initialize to null
 
         // Construct a switch statement to initialize the realm
         //   Legolas is from the Woodland Realm
