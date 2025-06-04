@@ -33,14 +33,14 @@ public class ConditionalExamples {
         HashMap<String, String> noble = new HashMap<>();
 
         // Prompt the user for a name
-        System.out.println("Please enter a the name of a noble: ");
+        System.out.println("Please enter the name of a noble: ");
         String nobleName = input.nextLine();
 
         // Store the name in the map
         noble.put("name", nobleName);
 
-        // Declare (but do not initialize) a String, title
-        String title;
+        // Declare a String, title, and initialize to null
+        String title = null;
 
         // Construct a series of if/else-if/else blocks to initialize the title
         if (nobleName.equals("Eomer")) {
@@ -51,7 +51,6 @@ public class ConditionalExamples {
             title = "King of Gondor";
         } else {
             System.out.println("Sorry, I do not have information on that noble.");
-            title = null;
         }
 
         // Set the title into the map
@@ -78,8 +77,8 @@ public class ConditionalExamples {
         // Store the name in the map
         elf.put("name", elfName);
 
-        // Declare (but do not initialize) a String, realm
-        String realm;
+        // Declare a String, realm, and initialize to null
+        String realm = null;
 
         // Construct a switch statement to initialize the realm
         switch (elfName) {
@@ -94,7 +93,6 @@ public class ConditionalExamples {
                 break;
             default:
                 System.out.println("Sorry, I don't have information on that elf.");
-                realm = null;
         }
 
         // Set the realm into the map

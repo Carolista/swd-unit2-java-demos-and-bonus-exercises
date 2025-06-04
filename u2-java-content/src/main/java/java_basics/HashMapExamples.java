@@ -23,6 +23,9 @@ public class HashMapExamples {
 
         /* HASHMAP METHODS */
 
+        // Print the value for the key "Arwen"
+        System.out.println(elfAges.get("Arwen"));
+
         // Print the size
         System.out.println(elfAges.size());
 
