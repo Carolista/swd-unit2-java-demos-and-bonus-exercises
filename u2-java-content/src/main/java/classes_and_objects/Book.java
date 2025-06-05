@@ -18,6 +18,5 @@ public class Book {
     // GETTERS & SETTERS
 
     // TODO: Use the IntelliJ generate feature to create getters & setters
-    // Create both getters & setters for title, author, and numPages
-    // Create only a getter for available (we will have instance methods to set this)
+
 }
