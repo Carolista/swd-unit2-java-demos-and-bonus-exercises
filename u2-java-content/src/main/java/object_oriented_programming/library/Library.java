@@ -1,7 +1,6 @@
 package object_oriented_programming.library;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Library {
 
@@ -29,19 +28,6 @@ public class Library {
 
 
     // INSTANCE METHODS
-
-    public void addBook(Book book) {
-        books.add(book);
-    }
-
-    public int findBook(String title, String author) {
-        for (Book book : books) {
-            if (book.getTitle().equals(title) && book.getAuthor().equals(author)) {
-                return books.indexOf(book);
-            }
-        }
-        return -1;
-    }
 
     public void printAvailableBooks() {
         System.out.println("\nLIST OF BOOKS AVAILABLE:");

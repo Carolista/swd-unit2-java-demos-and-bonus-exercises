@@ -5,6 +5,7 @@ public class Book {
     // Static property gets stored with class, not object
     private static int nextIdNum = 1;
 
+
     // FIELDS
 
     private final String bookId; // unique for each object
@@ -21,9 +22,6 @@ public class Book {
         this.title = title;
         this.author = author;
         this.numPages = numPages;
-        // Remember the constructor is just a method that
-        // executes immediately when an object is created
-        // We can set the bookId at that time
         this.bookId = generateBookId();
     }
 
@@ -54,11 +52,6 @@ public class Book {
     }
     public void setNumPages(int numPages) {
         this.numPages = numPages;
-    }
-
-    // Made private so that publicly only checkOut() and checkIn() are used
-    private void setAvailable(boolean available) {
-        this.available = available;
     }
 
     public boolean isAvailable() {
