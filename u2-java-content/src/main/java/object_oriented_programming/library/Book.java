@@ -3,7 +3,7 @@ package object_oriented_programming.library;
 public class Book {
 
     // TODO: Create static nextIdNum for creating unique bookIds
-    private static int nextIdNum = 1;
+
 
     // FIELDS
 
