@@ -7,6 +7,10 @@ public class Main {
         // TODO: Create several objects from the non-abstract classes
 
 
+
+        // TODO: Create an array of type Product[] to hold all the objects (polymorphism in action!)
+
+
         // TODO: Print each object created above
 
 
