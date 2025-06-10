@@ -16,14 +16,11 @@ public class Main {
         Apparel hat = new Apparel("Captain America Hat", "Feel like a supersoldier in this classic hat proudly displaying Captain America's vibranium shield", 19.99, 5, "Hats", "Marvel", new String[]{"OS"}, new String[]{"navy", "gray"});
         Apparel tShirt = new Apparel("Batman T-shirt", "Don the classic Batman logo with this minimalist design", 24.49, 4, "T-Shirts", "DC", new String[]{"XS", "S", "M", "L", "XL"}, new String[]{"black"});
 
-        System.out.println(book1);
-        System.out.println(book2);
-        System.out.println(usedBook1);
-        System.out.println(usedBook2);
-        System.out.println(mug);
-        System.out.println(tumbler);
-        System.out.println(hat);
-        System.out.println(tShirt);
+        Product[] products = { book1, book2, usedBook1, usedBook2, mug, tumbler, hat, tShirt };
+
+        for (Product product : products) {
+            System.out.println(product);
+        }
 
         hat.increaseQuantity(5);
         System.out.println(hat.getQuantity());
@@ -31,14 +28,9 @@ public class Main {
         mug.decreaseQuantity(1);
         System.out.println(mug.getQuantity());
 
-        System.out.println(book1.describe());
-        System.out.println(book2.describe());
-        System.out.println(usedBook1.describe());
-        System.out.println(usedBook2.describe());
-        System.out.println(mug.describe());
-        System.out.println(tumbler.describe());
-        System.out.println(hat.describe());
-        System.out.println(tShirt.describe());
+        for (Product product : products) {
+            System.out.println(product.describe());
+        }
 
     }
 
