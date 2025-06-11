@@ -33,6 +33,14 @@ public class Book {
 
     // GETTERS & SETTERS
 
+    public static int getNextIdNum() {
+        return nextIdNum;
+    }
+
+    public String getBookId() {
+        return bookId;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -95,6 +103,7 @@ public class Book {
 
     public void checkOut() {
         available = false;
+        timesCheckedOut++;
         System.out.println("\n" + getTitleAndAuthor() + " has been checked out of the library.");
     }
 
