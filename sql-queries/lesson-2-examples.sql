@@ -10,14 +10,13 @@ VALUES ("Vincent", "van Gogh", "Dutch"),
 ("Salvador", "Dalí", "Spanish"),
 ("Claude", "Monet", "French");
 
+
 -- Select an inner join on the artwork table using the artists' names 
-SELECT artist
-FROM artwork
+SELECT artwork.artist FROM artwork
 INNER JOIN artist ON artwork.artist = artist.full_name;
 
 -- Run the previous query but eliminate duplicates 
-SELECT DISTINCT artist
-FROM artwork
+SELECT DISTINCT artwork.artist FROM artwork
 INNER JOIN artist ON artwork.artist = artist.full_name;
 
 -- List all artwork titles and artists and add nationalities from artist table using a left inner join
@@ -26,15 +25,15 @@ FROM artwork
 LEFT JOIN artist ON artwork.artist = artist.full_name;
 
 -- List all artwork titles and styles and add full_name and nationality from artist table using a right inner join
-SELECT DISTINCT artwork.title, artwork.style, artist.full_name, artist.nationality
+SELECT DISTINCT artwork.title, artwork.category, artist.full_name, artist.nationality
 FROM artwork
 RIGHT JOIN artist ON artwork.artist = artist.full_name;
 
 -- Do an inner join on artwork using artists' names and group by artist with a total
-SELECT artist.full_name, COUNT(*) 
+SELECT artist.full_name, COUNT(*)
 FROM artist INNER JOIN artwork ON artwork.artist = artist.full_name
 GROUP BY artist.full_name;
 
--- Use a subquery to look up artist id by last name and set all their artworks on_display to 1
-
-
+-- Use a subquery to look up which artists in the artist table have artworks on display
+SELECT full_name FROM artist
+WHERE full_name IN (SELECT artist FROM artwork WHERE on_display=1);
