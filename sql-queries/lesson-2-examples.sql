@@ -20,5 +20,5 @@
 -- Do an inner join on artwork using artists' names and group by artist with a total
 
 
--- Use a subquery to look up artist id by last name and set all their artworks on_display to 1
+-- Use a subquery to look up which artists in the artist table have artworks on display
 
