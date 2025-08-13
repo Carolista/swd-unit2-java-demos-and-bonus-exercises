@@ -1,17 +1,10 @@
-# swd-unit2-java-demos-and-bonus-exercises
-Additional content to complement 2025 curriculum at LaunchCode for Java unit
+# SWD-U1-bonus-exercises
 
-These demos and bonus exercises will give you extra practice on fundamental concepts! Instructions are marked with TODO so you can finish it after familiarizing yourself with any existing code I've already provided.
+These exercises will give you extra practice on fundamental concepts! Each file has some of the work already done to serve as examples, and the rest of the instructions are marked with TODO so you can finish it.
 
 There are two branches: 
  - `main` - starter code
  - `solution` - fully completed code
-
-DO NOT CODE IN THOSE BRANCHES, as I may continue to add content to this repo and you will want to be able to update `main` from my upstream repository without any merge or rebasing conflicts.
-
-INSTEAD, create your own branch off `main` where you can practice on your local machine. It will be best to create a new branch for each module. Example:
-
-```git checkout -b my-java-basics-practice```
 
 To fully benefit from this practice, don't look at the solution until you have done it yourself!
 
@@ -20,13 +13,20 @@ To fully benefit from this practice, don't look at the solution until you have d
 1. COPY the link from your new repo on GitHub
 1. CLONE it to your local machine. Example (using YourUserName):
 
-```git clone https://github.com/YourUsername/SWD-U1-bonus-exercises```
+```git clone https://github.com/YourUsername/swd-unit2-java-demos-and-bonus-exercises```
+
+## PRACTICE IN YOUR OWN BRANCHES
+If you want to update your forked repository from my parent repository when I add or change things to mine in the future, there are instructions below this section, BUT...
+It will go much easier if you don't ever change the code in `main`. Instead, do the following:
+1. From `main`, use the command `git checkout -b new-branch-name` to create your own branch for practicing (example: `functions-practice`).
+1. Practice as much as you'd like in your new branch, making commits as you add code.
+1. When you are ready to work on something different in another new branch, use the command `git checkout main` to return to `main` and then you can repeat the two steps above.
 
 ## UPDATE YOUR REPO WITH MY FUTURE CHANGES 
 
 #### Set the upstream link:
 1. On your local machine, make sure you are in the correct directory in the terminal.
-1. Use the command `git remote add upstream https://github.com/Carolista/SWD-U1-bonus-exercises`
+1. Use the command `git remote add upstream https://github.com/Carolista/swd-unit2-java-demos-and-bonus-exercises`
 
 You now have a direct link to my original repo! 
 
