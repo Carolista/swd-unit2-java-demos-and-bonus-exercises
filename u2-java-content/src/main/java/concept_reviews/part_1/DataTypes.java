@@ -6,7 +6,7 @@ package concept_reviews.part_1;
 
 public class DataTypes {
 
-    // TODO: Declare private, static variables (each with an appropriate type) that have
+    // Declare private, static variables (each with an appropriate type) that have
     //  fun/interesting values for the following:
 
     // 0: nonsense word to substitute for an object you don't recall the name of, capitalized

@@ -2,7 +2,7 @@ package concept_reviews.part_2;
 
 public class Vegetable {
 
-    // TODO: Define the Vegetable class with 3-4 private fields
+    // Define the Vegetable class with 3-4 private fields
     //  that each vegetable might have in common.
 
     private String name;
@@ -10,7 +10,7 @@ public class Vegetable {
     private double weight; // ounces
 
 
-    // TODO: Use IntelliJ's generate feature to add a constructor and getters/setters.
+    // Use IntelliJ's generate feature to add a constructor and getters/setters.
 
     public Vegetable(String name, String color, double weight) {
         this.name = name;
@@ -43,7 +43,7 @@ public class Vegetable {
     }
 
 
-    // TODO: Override the class's .toString() method to print a nicely-formatted
+    // Override the class's .toString() method to print a nicely-formatted
     //  output of its properties.
 
     @Override

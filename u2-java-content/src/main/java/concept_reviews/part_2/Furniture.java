@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class Furniture {
 
-    // TODO: Define the Furniture class with 5-8 private fields
+    // Define the Furniture class with 5-8 private fields
     //  that each piece of furniture might have in common.
     //  Include a boolean of some kind.
     //  Also, one of these fields should allow for multiple materials to be listed
@@ -22,7 +22,7 @@ public class Furniture {
     private final ArrayList<String> materials = new ArrayList<>();
 
 
-    // TODO: Use IntelliJ's generate feature to add a constructor and getters/setters.
+    // Use IntelliJ's generate feature to add a constructor and getters/setters.
     //  Modify the constructor if needed, depending on how you handle the list of materials.
 
     public Furniture(String name, String manufacturer, String category, double height, double width, double depth, boolean assemblyRequired, String[] materialsArray) {
@@ -97,7 +97,7 @@ public class Furniture {
     }
 
 
-    // TODO: Override the class's .toString() method to print a nicely-formatted
+    // Override the class's .toString() method to print a nicely-formatted
     //  output of its properties.
 
     @Override

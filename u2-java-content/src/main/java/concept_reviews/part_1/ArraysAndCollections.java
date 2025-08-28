@@ -8,16 +8,16 @@ public class ArraysAndCollections {
 
     public static void printDesserts() {
 
-        // TODO: Declare an empty array of four strings called favoriteDesserts.
+        // Declare an empty array of four strings called favoriteDesserts.
         String[] favoriteDesserts = new String[4];
 
-        // TODO: Add your 4 favorite desserts one at a time to the array
+        // Add your 4 favorite desserts one at a time to the array
         favoriteDesserts[0] = "dark chocolate covered pretzels";
         favoriteDesserts[1] = "dark chocolate cherry ice cream";
         favoriteDesserts[2] = "chocolate cheesecake";
         favoriteDesserts[3] = "apple pie";
 
-        // TODO: Make use of a for-each loop to print something like this:
+        // Make use of a for-each loop to print something like this:
         /*
             My top 3 desserts:
               - dark chocolate covered pretzels
@@ -36,7 +36,7 @@ public class ArraysAndCollections {
 
     public static void printSeasonsAndReasons() {
 
-        // TODO: Choose a collection type to store the four seasons of the year
+        // Choose a collection type to store the four seasons of the year
         //  along with your favorite thing about each season.
         HashMap<String, String> seasonsAndReasons = new HashMap<>();
 
@@ -45,7 +45,7 @@ public class ArraysAndCollections {
         seasonsAndReasons.put("Summer", "enjoying the long hours of daylight");
         seasonsAndReasons.put("Fall", "driving through the mountains, surrounded by brilliant reds and golds");
 
-        // TODO: Print a series of sentences with the information on each season.
+        // Print a series of sentences with the information on each season.
         //  Refactor your data if needed to fit the sentence format.
         for (String season : seasonsAndReasons.keySet()) {
             String reason = seasonsAndReasons.get(season);
