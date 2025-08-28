@@ -61,7 +61,7 @@ public class HashSetExamples {
         /* BONUS KNOWLEDGE: SORTING HASHSETS */
 
         // TODO: Convert the HashSet to an ArrayList
-        //  then sort it with Collections.sort()
+        //  then sort it with ArraysAndCollections.sort()
         //  then convert it back to a LinkedHashSet and print it
         ArrayList<Integer> numList = new ArrayList<>(numSet);
         Collections.sort(numList);
