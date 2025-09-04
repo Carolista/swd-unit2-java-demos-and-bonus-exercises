@@ -1,4 +1,4 @@
--- Create a new table, artist, with an id, first_name, last_name, full_name, and nationality
+-- Create a new table, artist, with an id, first_name, last_name, full_name, and location
 -- Add UQ and AI properties for id column
 -- Use G property for full_name and use an expression to auto-generate it from first_name and last_name
 

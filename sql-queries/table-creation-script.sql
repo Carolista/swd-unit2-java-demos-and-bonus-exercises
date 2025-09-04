@@ -21,6 +21,10 @@
 
 
 
+-- Test with ROLLBACK, then COMMIT instead if there are no errors
+
+
+
 /* AFTER SUCCESSFUL SCRIPT RUN, IMPORT DATA IN THE FOLLOWING ORDER */
 
 -- Import records from categories.csv
@@ -28,3 +32,4 @@
 -- Import records from artworks.csv
 -- Import records from details.csv
 
+-- No exhibit records exist yet, so nothing to import for that table
