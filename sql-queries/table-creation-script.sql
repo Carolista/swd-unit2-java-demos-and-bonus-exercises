@@ -13,9 +13,9 @@ CREATE TABLE category (
 -- Create artist table
 CREATE TABLE artist (
 	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    first_name VARCHAR(30) NOT NULL,
-    last_name VARCHAR(30) NOT NULL,
-    country VARCHAR(20) NOT NULL
+    first_name VARCHAR(40) NOT NULL,
+    last_name VARCHAR(40) NOT NULL,
+    country VARCHAR(40) NOT NULL
 );
 
 -- Create exhibit table
@@ -28,7 +28,7 @@ CREATE TABLE exhibit (
 -- Designate foreign keys for artist, category, and exhibit
 CREATE TABLE artwork (
 	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    title VARCHAR(50) NOT NULL,
+    title VARCHAR(100) NOT NULL,
     details_id INT NOT NULL,
     artist_id INT NOT NULL,
     category_id INT NOT NULL,
@@ -42,8 +42,8 @@ CREATE TABLE artwork (
 -- Create artwork_details table
 CREATE TABLE artwork_details (
 	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    year_created VARCHAR(20) NULL,
-    media VARCHAR(80) NULL
+    year_created VARCHAR(40),
+    media VARCHAR(50)
 );
 
 -- ROLLBACK;
@@ -56,3 +56,4 @@ COMMIT;
 -- Import records from artworks.csv
 -- Import records from details.csv
 
+-- No exhibit records exist yet, so nothing to import for that table

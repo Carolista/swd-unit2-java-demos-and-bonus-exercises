@@ -10,7 +10,6 @@ VALUES ("Vincent", "van Gogh", "Dutch"),
 ("Salvador", "Dalí", "Spanish"),
 ("Claude", "Monet", "French");
 
-
 -- Select an inner join on the artwork table using the artists' names 
 SELECT artwork.artist FROM artwork
 INNER JOIN artist ON artwork.artist = artist.full_name;

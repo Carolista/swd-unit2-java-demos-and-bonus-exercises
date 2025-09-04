@@ -5,8 +5,8 @@ VALUES("Renaissance and Baroque Masterpieces");
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 /* 
-	Write a script in another file to handle table 
-    updates when putting works on exhibit 
+	Before moving on, complete the exhibit-art-script 
+    to handle table updates when putting works on exhibit 
 */
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --

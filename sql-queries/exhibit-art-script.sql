@@ -1,4 +1,9 @@
-/* Write a script to handle table updates when putting an artist's works on exhibit */
+/* 
+	Script to handle table updates when putting an artist's works on exhibit 
+*/
+
+-- WRAP ENTIRE SCRIPT IN A TRANSACTION
+START TRANSACTION;
 
 -- Create variables for the exhibit id and the artist's last name
 SET @curr_exhibit = 2;
@@ -13,3 +18,6 @@ SET @curr_artist_id = (SELECT id FROM artist WHERE last_name = @curr_artist_ln);
 UPDATE artwork
 SET exhibit_id = @curr_exhibit, on_display=1
 WHERE artist_id = @curr_artist_id;
+
+-- ROLLBACK;
+COMMIT;
