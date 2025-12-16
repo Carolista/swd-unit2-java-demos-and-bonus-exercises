@@ -10,9 +10,18 @@ public class Main {
         Book book2 = new Book("Nemesis", "Isaac Asimov", 364);
         Book book3 = new Book("1984", "George Orwell", 300);
 
-        Book[] bookArr = { book1, book2, book3};
+        Book[] bookArr = { book1, book2, book3 };
 
         library.addBooks(bookArr);
+
+        library.printAvailableBooks();
+
+        book1.checkOut();
+        book2.checkOut();
+
+        library.printAvailableBooks();
+
+        book1.checkIn();
 
         library.printAvailableBooks();
     }

@@ -50,4 +50,17 @@ public class Book {
         return available;
     }
 
+
+    // INSTANCE METHODS
+
+    public void checkOut() {
+        this.setAvailable(false);
+        System.out.println(System.lineSeparator() + title + " has been checked out of the library.");
+    }
+
+    public void checkIn() {
+        available = true;
+        System.out.println(System.lineSeparator() + title + " has been returned to the library.");
+    }
+
 }

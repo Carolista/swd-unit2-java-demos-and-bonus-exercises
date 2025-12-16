@@ -16,15 +16,15 @@ public class Library {
         return books;
     }
 
+    // INSTANCE METHODS
+
     public void addBooks(Book[] bookArray) {
-//        for (Book book : bookArray) {
-//            books.add(book);
-//        }
         Collections.addAll(books, bookArray);
     }
 
     public void printAvailableBooks() {
-        System.out.println("\nLIST OF BOOKS AVAILABLE:");
+        String newline = System.lineSeparator();
+        System.out.println(newline + "LIST OF BOOKS AVAILABLE:");
         for (Book book : books) {
             if (book.isAvailable()) {
                 System.out.println("\t" + book.getTitle() + " by " + book.getAuthor());
