@@ -15,14 +15,15 @@ public class Library {
 
     @Override
     public String toString() {
+        String line = Utils.newline + "------------------------------------" + Utils.newline;
         StringBuilder allBookInfo = new StringBuilder();
         for (Book book : books) {
             allBookInfo.append(book.toString());
-            allBookInfo.append("\n------------------------------------\n");
+            allBookInfo.append(line);
         }
-        return "\nWELCOME TO OUR LIBRARY!\n\n" +
-                "View our full collection:\n" +
-                "------------------------------------\n" +
+        return Utils.newline + "WELCOME TO OUR LIBRARY!" + Utils.newline +
+                "View our full collection:" +
+                line +
                 allBookInfo; // automatically converted to String due to concatenation
     }
 
@@ -30,7 +31,7 @@ public class Library {
     // INSTANCE METHODS
 
     public void printAvailableBooks() {
-        System.out.println("\nLIST OF BOOKS AVAILABLE:");
+        System.out.println(Utils.newline + "LIST OF BOOKS AVAILABLE:");
         for (Book book : books) {
             if (book.isAvailable()) {
                 System.out.println("\t" + book.getTitle() + " by " + book.getAuthor());

@@ -2,6 +2,8 @@ package object_oriented_programming.library;
 
 public class Utils {
 
+    static final String newline = System.lineSeparator();
+
     // This uses the StringBuilder class to allow concatenation of characters through a loop
     // Notice we convert it to a string at the end (which matches the return type)
     static String getInitials(String fullName) {

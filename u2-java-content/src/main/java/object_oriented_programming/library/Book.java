@@ -81,11 +81,11 @@ public class Book {
     public String toString() {
         String availability = isAvailable() ? "Available for checkout" : "CURRENTLY UNAVAILABLE";
         String timePlural = timesCheckedOut == 1 ? "" : "s";
-        return getTitleAndAuthor() + "\n" +
-                numPages + " pages" +
-                "\nBook " + bookId + " checked out " +
+        return getTitleAndAuthor() + Utils.newline +
+                numPages + " pages" + Utils.newline +
+                "Book " + bookId + " checked out " +
                 timesCheckedOut + " time" + timePlural +
-                "\n" + availability;
+                Utils.newline + availability;
     }
 
 
@@ -104,11 +104,11 @@ public class Book {
     public void checkOut() {
         available = false;
         timesCheckedOut++;
-        System.out.println("\n" + getTitleAndAuthor() + " has been checked out of the library.");
+        System.out.println(Utils.newline + getTitleAndAuthor() + " has been checked out of the library.");
     }
 
     public void checkIn() {
         available = true;
-        System.out.println("\n" + getTitleAndAuthor() + " has been checked in.");
+        System.out.println(Utils.newline + getTitleAndAuthor() + " has been checked in.");
     }
 }
