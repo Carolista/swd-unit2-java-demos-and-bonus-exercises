@@ -13,6 +13,7 @@ public class Main {
         Library library = new Library();
 
         Book[] bookArr = { book1, book2, book3};
+
         Collections.addAll(library.books, bookArr);
 
         book1.checkOut();
@@ -20,11 +21,12 @@ public class Main {
 
         book1.checkIn();
 
-        System.out.println(book3); // uses overridden toString()
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println(book3);
 
-        System.out.println(library); // uses overridden toString()
+        System.out.println(library);
 
         library.printAvailableBooks();
     }
-
 }

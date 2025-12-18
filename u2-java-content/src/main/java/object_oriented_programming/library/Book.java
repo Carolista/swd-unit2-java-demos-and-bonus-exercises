@@ -5,7 +5,6 @@ public class Book {
     // Static property gets stored with class, not object
     private static int nextIdNum = 1;
 
-
     // FIELDS
 
     private final String bookId; // unique for each object
@@ -74,18 +73,18 @@ public class Book {
         this.timesCheckedOut = timesCheckedOut;
     }
 
-
     // OVERRIDE SPECIAL METHODS
 
     @Override
     public String toString() {
         String availability = isAvailable() ? "Available for checkout" : "CURRENTLY UNAVAILABLE";
         String timePlural = timesCheckedOut == 1 ? "" : "s";
-        return getTitleAndAuthor() + Utils.newline +
-                numPages + " pages" + Utils.newline +
-                "Book " + bookId + " checked out " +
+        String newline = System.lineSeparator();
+        return newline + getTitleAndAuthor() + newline +
+                numPages + " pages" +
+                newline + "Book " + bookId + " checked out " +
                 timesCheckedOut + " time" + timePlural +
-                Utils.newline + availability;
+                newline + availability;
     }
 
 
@@ -102,13 +101,17 @@ public class Book {
     }
 
     public void checkOut() {
-        available = false;
-        timesCheckedOut++;
-        System.out.println(Utils.newline + getTitleAndAuthor() + " has been checked out of the library.");
+        if (available) {
+            available = false;
+            timesCheckedOut++;
+            System.out.println(System.lineSeparator() + getTitleAndAuthor() + " has been checked out of the library.");
+        }
     }
 
     public void checkIn() {
-        available = true;
-        System.out.println(Utils.newline + getTitleAndAuthor() + " has been checked in.");
+        if (!available) {
+            available = true;
+            System.out.println(System.lineSeparator() + getTitleAndAuthor() + " has been returned to the library.");
+        }
     }
 }
