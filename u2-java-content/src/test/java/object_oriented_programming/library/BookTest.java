@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class BookTest {
 
+    /* SET UP MOCK DATA FOR TESTING */
+
     Book book1;
     Book book2;
 
@@ -15,6 +17,8 @@ public class BookTest {
         book1 = new Book("Hidden Figures", "Margot Lee Shetterly", 271);
         book2 = new Book("Code Girls", "Liza Mundy");
     }
+
+    /* TEST CONSTRUCTOR */
 
     @Test
     public void firstConstructorSetsTitle() {
@@ -47,6 +51,8 @@ public class BookTest {
         int actual = book2.getNumPages();
         assertEquals(expected, actual, msg);
     }
+
+    /* TEST THE INSTANCE METHODS */
 
     @Test
     public void bookIdGenerated() {

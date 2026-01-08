@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class LibraryTest {
 
+    /* SET UP MOCK DATA FOR TESTING */
+
     Book book1;
     Book book2;
     Library library;
@@ -18,6 +20,8 @@ public class LibraryTest {
         library = new Library();
     }
 
+    /* TEST CONSTRUCTOR */
+
     @Test
     public void constructorSetsBookList() {
         String notNullMsg = "a list of books exists";
@@ -28,6 +32,8 @@ public class LibraryTest {
         int actualSize = library.books.size();
         assertEquals(expectedSize, actualSize, sizeMsg);
     }
+
+    /* TEST THE INSTANCE METHOD */
 
     @Test
     public void booksAddedToLibrary() {

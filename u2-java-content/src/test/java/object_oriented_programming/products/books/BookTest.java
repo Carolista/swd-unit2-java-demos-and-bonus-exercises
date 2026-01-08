@@ -6,7 +6,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class BookTest {
 
+    /* SET UP MOCK DATA FOR TESTING */
+
     Book testBook = new Book("Pride and Prejudice", "This timeless classic showcases Austen's wit and winsome characters", 12.49, 6, "Jane Austen", "Romantic Fiction", "Paperback");
+
+    /* TEST INHERITANCE */
 
     @Test
     public void nameFieldIsInherited() {

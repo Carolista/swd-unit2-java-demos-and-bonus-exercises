@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class UtilsTest {
 
+    /* TEST STATIC METHOD */
+
     @Test
     public void initialsReturnedFromFullName() {
         String msg = "getInitials() returns only initials when given a full name";
