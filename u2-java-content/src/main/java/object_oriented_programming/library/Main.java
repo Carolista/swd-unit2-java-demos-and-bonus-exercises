@@ -15,18 +15,28 @@ public class Main {
         Book[] bookArr = { book1, book2, book3};
 
         // TODO: Use Collections to add all books from bookArr to library
+        Collections.addAll(library.books, bookArr);
 
 
         // TODO: Check out books 1 and 3
+        book1.checkOut();
+        book3.checkOut();
 
 
         // TODO: Check book 1 back in
+        book1.checkIn();
 
 
         // TODO: Print book 3
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println(book3);
+
+
 
 
         // TODO: Print the library
+        System.out.println(library);
 
 
         library.printAvailableBooks();
