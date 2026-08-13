@@ -51,7 +51,7 @@
 -- View only records where the title begins with "The"
 
 
--- View all records again, but order by style, ascending
+-- View all records again, but order by category, ascending
 
 
 -- Delete "The Church at Auvers" record (use ID number)
