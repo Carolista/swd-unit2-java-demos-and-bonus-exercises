@@ -22,8 +22,9 @@ public class Main {
         } catch (InvalidOrderException e) {
             System.out.println("[Main] Test 2 catch - Validation Error: " + e.getMessage());
         } catch (FileNotFoundException e) {
-            // Required by compiler because OrderRepository processOrder method declares
-            //  'throws FileNotFoundException' and OrderService class bubbles it up
+            // Required by compiler because OrderService processOrder method declares
+            //  'throws FileNotFoundException' to bubble up thrown exception from
+            //  the OrderRepository method loadOrderFile
             System.out.println("[Main] Test 2 catch - System Error: " + e.getMessage());
         }
 
