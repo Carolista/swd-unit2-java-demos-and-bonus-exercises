@@ -8,6 +8,6 @@ class OrderRepository {
         if (!filename.endsWith(".json")) {
             throw new FileNotFoundException("File not found or invalid format: " + filename);
         }
-        System.out.println("  [Repository] File loaded successfully: " + filename);
+        System.out.println("[Repository] File loaded successfully: " + filename);
     }
 }

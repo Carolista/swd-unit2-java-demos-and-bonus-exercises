@@ -12,7 +12,7 @@ class OrderService {
             throw new InvalidOrderException("Order ID cannot be empty.");
         }
 
-        System.out.println("  [Service] Processing order " + orderId + "...");
+        System.out.println("[Service] Processing order " + orderId + "...");
 
         // 2. Delegate to repository (Checked Exception bubbles up through here)
         repository.loadOrderFile(filename);
