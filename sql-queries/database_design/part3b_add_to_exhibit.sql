@@ -14,4 +14,5 @@
 -- Set the exhibit_id for all artworks with the current artist
 -- Also set on_display to true
 
--- ROLLBACK;
+-- Ensure script is rolled back during development and testing
+-- Switch to COMMIT when everything is working as intended, top to bottom
