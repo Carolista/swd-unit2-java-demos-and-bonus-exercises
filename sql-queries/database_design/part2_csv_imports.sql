@@ -25,7 +25,7 @@ IGNORE 1 ROWS;
 
 -- Check that records have been imported successfully
 -- You can also run this in MySQL Workbench
-SELECT * FROM gallery_dbd.categories;
+SELECT * FROM categories;
 
 -- Import records from artists.csv
 LOAD DATA LOCAL INFILE 'data/artists.csv'
@@ -37,7 +37,7 @@ IGNORE 1 ROWS;
 
 -- Check that records have been imported successfully
 -- You can also run this in MySQL Workbench
-SELECT * FROM gallery_dbd.artists;
+SELECT * FROM artists;
 
 -- Import records from artworks.csv; note how to handle the text 'null' for exhibit_id
 LOAD DATA LOCAL INFILE 'data/artworks.csv'
@@ -51,7 +51,7 @@ SET exhibit_id = NULLIF(@var_exhibit, 'null');
 
 -- Check that records have been imported successfully
 -- You can also run this in MySQL Workbench
-SELECT * FROM gallery_dbd.artworks;
+SELECT * FROM artworks;
 
 -- Import records from details.csv
 LOAD DATA LOCAL INFILE 'data/details.csv'
@@ -63,9 +63,9 @@ IGNORE 1 ROWS;
 
 -- Check that records have been imported successfully
 -- You can also run this in MySQL Workbench
-SELECT * FROM gallery_dbd.artwork_details; 
+SELECT * FROM artwork_details; 
 
 -- No exhibit records exist yet, so nothing to import for that table
 
--- All done? Enter the command 'exit' at the MySQL CLI prompt to go back to your
--- regular terminal prompt.
+-- All done? Enter the command 'exit' at the MySQL CLI prompt to go 
+-- back to your regular terminal prompt.
