@@ -36,7 +36,7 @@ SELECT exhibits.title AS exhibit_title, artworks.title AS artwork_title, CONCAT(
 FROM artworks
 INNER JOIN exhibits ON artworks.exhibit_id = exhibits.id
 INNER JOIN artists ON artworks.artist_id = artists.id
-INNER JOIN artwork_details ON artworks.details_id = artwork_details.id
+INNER JOIN artwork_details ON artworks.id = artwork_details.artwork_id
 INNER JOIN categories ON artworks.category_id = categories.id
 WHERE artworks.on_display = 1
 ORDER BY exhibits.title, artists.last_name;
