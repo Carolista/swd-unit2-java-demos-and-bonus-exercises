@@ -1,5 +1,7 @@
-# Everything below is a true script meant to run from top to bottom
-# However, a TRANSACTION does not make sense here because this is pure structural setup
+/*
+    Everything below is a true script meant to run from top to bottom
+    However, a TRANSACTION does not make sense here because this is pure structural setup
+*/
 
 -- Create database if it does not already exist
 
